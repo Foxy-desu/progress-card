@@ -112,6 +112,15 @@ body {
     background: $clr-bg-accent;
     border-radius: 6px;
     border-style: none;
+    transition: background .2s;
+
+    @media (hover: hover) {
+        &:hover {
+            cursor: pointer;
+            background: $clr-bg-secondary;
+            color: $clr-txt-primary;
+        }
+    }
 }
 
 

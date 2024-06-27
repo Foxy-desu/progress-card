@@ -107,4 +107,12 @@ body {
   background: #F4F8FF;
   border-radius: 6px;
   border-style: none;
+  transition: background 0.2s;
+}
+@media (hover: hover) {
+  .btn:hover {
+    cursor: pointer;
+    background: #2364DB;
+    color: #fff;
+  }
 }/*# sourceMappingURL=styles.css.map */
