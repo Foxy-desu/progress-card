@@ -1,0 +1,116 @@
+@import "./variables.scss";
+@import "./typography";
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter;
+}
+
+.section {
+    padding: 25px;
+}
+
+.checklist-card {
+    display: flex;
+    gap: 0.9rem;
+    flex-wrap: wrap;
+    padding: 9px 20px 8px;
+    color: $clr-txt-primary;
+    background: $clr-bg-primary;
+    border-radius: 10px;
+}
+
+.checklist-card__progress {
+    display: flex;
+    align-items: center;
+}
+.progress-wrap {
+
+    width: 64px;
+    height: 64px;
+    
+}
+.progress-bar {
+    max-width: 100%;
+    max-height: 100%;
+
+    &__track {
+        fill: none;
+        stroke: $clr-bg-track;
+        stroke-width: 1px;
+    }
+
+    &__progress {
+        fill: none;
+        stroke: $clr-bg-accent;
+        stroke-width: 2px;
+        stroke-linecap: round;
+        stroke-dasharray: 173;
+        stroke-dashoffset: 170;
+        transform-origin: center;
+        transform: rotate(-87deg);
+    }
+
+    &__label {
+        font-size: 20px;
+    }
+}
+
+
+
+.checklist-card__content {
+    flex-grow: 1;
+}
+.card-content {
+    margin-bottom: 0.25rem;
+}
+
+.card-title {
+    display: inline-block;
+    padding: 0 0.8rem;
+    font-weight: normal;
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+    background-color: $clr-bg-secondary;
+    border-radius: 40px;
+}
+
+.checklist-card__progress-desc {
+    font-weight: 600;
+    font-size: 0.9rem;
+    line-height: 1.25rem;
+    letter-spacing: 0.3px;
+}
+
+.checklist-card__next-step {
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+}
+
+.checklist-card__controls {
+    display: flex;
+    align-items: center;
+    margin-top: 1px;
+}
+
+.btn {
+    padding: 0.6rem 1.56rem;
+    color: $clr-txt-secondary;
+    font-weight: 400;
+    font-size: 0.88rem;
+    line-height: 1.25rem;
+    letter-spacing: 0.5px;
+    background: $clr-bg-accent;
+    border-radius: 6px;
+    border-style: none;
+}
+
+
+

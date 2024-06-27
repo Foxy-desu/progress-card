@@ -1,0 +1,14 @@
+$clr-bg-primary: #3579F5;
+$clr-bg-secondary: #2364DB;
+$clr-bg-track: rgba(255, 255, 255, 0.5);
+$clr-bg-accent: #F4F8FF;
+$clr-txt-primary: #fff;
+$clr-txt-secondary: #4777ED;
+
+//progress 
+$size: 250px;
+$half-size: calc($size / 2);
+$stroke-width: 2px;
+$radius: calc(($size - $stroke-width) / 2);
+$circumference: calc($radius * pi * 2);
+$dash: calc(--progress * $circumference / 100);
