@@ -13,6 +13,8 @@ body {
 
 .section {
   padding: 25px;
+  max-width: 793px;
+  margin: auto;
 }
 
 .checklist-card {
