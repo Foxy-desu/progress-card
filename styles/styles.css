@@ -51,8 +51,8 @@ body {
   stroke: #F4F8FF;
   stroke-width: 2px;
   stroke-linecap: round;
-  stroke-dasharray: 173;
-  stroke-dashoffset: 170;
+  stroke-dasharray: calc(175 + 172 * var(--completePercent) / 100);
+  stroke-dashoffset: 172;
   transform-origin: center;
   transform: rotate(-87deg);
 }

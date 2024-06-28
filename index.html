@@ -14,7 +14,8 @@
                 <div class="progress-wrap">
                     <svg viewBox="0 0 60 60" class="progress-bar">
                         <circle class="progress-bar__track" cx="30" cy="30" r="28"></circle>
-                        <circle class="progress-bar__progress" cx="30" cy="30" r="28"></circle>
+                        <!-- The --completePercent variable works properly with values in range 0-100 -->
+                        <circle class="progress-bar__progress" cx="30" cy="30" r="28" style="--completePercent: 100;"></circle>
                         <text class="progress-bar__label" x="50%" y="50%" text-anchor="middle" fill="#fff" dy=".37em">0/7</text>
                     </svg>
                 </div>

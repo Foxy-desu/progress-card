@@ -1,5 +1,6 @@
 @import "./variables.scss";
 @import "./typography";
+@import "./setProgress.scss";
 *,
 *::after,
 *::before {
@@ -53,8 +54,8 @@ body {
         stroke: $clr-bg-accent;
         stroke-width: 2px;
         stroke-linecap: round;
-        stroke-dasharray: 173;
-        stroke-dashoffset: 170;
+        stroke-dasharray: setProgress(var(--completePercent));
+        stroke-dashoffset: 172;
         transform-origin: center;
         transform: rotate(-87deg);
     }
@@ -122,6 +123,3 @@ body {
         }
     }
 }
-
-
-

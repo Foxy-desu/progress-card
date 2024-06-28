@@ -1,0 +1,10 @@
+
+@function setProgress($percentage:0) {
+    $empty: 175;
+    $full: 347;
+    $range: calc($full - $empty);
+    $progress: calc($empty + ($range * $percentage / 100));
+    $currentPercent: $percentage;
+    @return $progress;
+};
+
